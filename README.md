@@ -1,19 +1,20 @@
-A single-page, one-column resume for software developers. It uses the base latex templates and fonts to provide ease of use and installation when trying to update the resume. The different sections are clearly documented and custom commands are used to provide consistent formatting. The three main sections in the resume are education, experience, and projects.
+The source code for my resume. I've come to prefer typesetting in LaTex to word processors, especially when bouncing between ubuntu and mac workstations. I adaped the format and style from https://github.com/sb2nov/resume. The bibliography with publications is my own. 
 
-### Motivation
+Git is great for making edits to a resume. As a repo, the resume's evolution and history is preserved. Further, in github, I shouldn't have to worry too much about loosing or constantly backing up my resume.
 
-I created this template as managing a resume on Google Docs was hard and changing any formatting was too difficult since it had to be applied in multiple places.
 
-Most currently available templates either focus on two columns, or are multiple pages long that didn't work well for career fairs or online applications.
-
-### Quick start
+### Usage
 
 pdflatex <name.tex>
 
 If updating or re-biulding the bibliography with bibtex:
+
 latex <name>
+
 bibtex <name> Regenerates *.bib file
+
 latex <name>  Regenerates *.aux and dependencies for bibliography 
+
 pdflatex <name>
 
 
