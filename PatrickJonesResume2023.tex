@@ -1,0 +1,252 @@
+%-------------------------
+% Resume in Latex
+% LaTex Source and Syling By : Sourabh Bajaj - https://github.com/sb2nov/resume
+% Styling Adapted by: Patrick Jones
+% Bibliography by: Patrick Jones
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{bibentry}
+\usepackage{hanging}
+\usepackage{natbib}
+\usepackage{amsmath}
+\input{glyphtounicode}
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[2]{
+  \item\small{
+    \textbf{#1}{: #2 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\publication}[1]{%
+    \smallskip\par\hangpara{1.5em}{1}\bibentry{#1}\smallskip
+}
+
+% Just in case someone needs a heading that does not need to be in a list
+\newcommand{\resumeHeading}[4]{
+    \begin{tabular*}{0.99\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-1pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubSubheading}[2]{
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \textit{\small#1} & \textit{\small #2} \\
+    \end{tabular*}\vspace{-5pt}
+}
+
+\newcommand{\resumeSubItem}[2]{\resumeItem{#1}{#2}\vspace{-4pt}}
+
+\renewcommand{\labelitemii}{$\circ$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=*]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+%-------------------------------------------
+%%%%%%  CV STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+% For publication:
+\nobibliography{$HOME/Documents/resume/resume/publication.bib}
+\bibliographystyle{unsrt}
+
+%----------HEADING-----------------
+\begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+  \textbf{{\Large Patrick Jeffrey Jones}}\\ 
+  \href{mailto:patrick.jones@myactv.net}{patrick.jones@myactv.net} 
+   & \href{https://www.linkedin.com/in/patrick-jones-34b0b9115}{ Linkedin : Patrick Jones}\\
+  240-217-7895  
+   & \href{https://www.github.com/p2j2j4}{ Github : @p2j2j4}\\
+\end{tabular*}
+
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Catholic University of America}{Washington, DC}
+      {Bachelor of Science in Mechanical Engineering; Cumulative GPA: 3.786}{Aug. 2014 -- May. 2018}
+  \resumeSubHeadingListEnd
+
+%-----------Research-----------------
+\section{Research}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Machine Vision and Mechatronics Laboratory}{Catholic University of America, Washington, DC}
+      {Research Assistant}{September 2015 - August 2017}
+     \resumeItemListStart
+       \resumeItem{Machine Vision}
+         {Collected raw image data from an experimental setup consisting of Microsoft Kinect infrared depth sensors. Assisted in the 3D image reconstruction of raw data using image correlation software.}
+      \resumeItem{LabView}
+         {Aided in designing experimental trials involving electro-mechanical system excitation and data acquisition. Post-processed vibration data using Matlab.}
+      %\resumeItem{Matlab}
+      %   {Post-processed two sets of experimental vibration data using Matlab.}
+       %\resumeItem{Arduino}
+       %  {Soldered 125 mini green and blue LEDs to construct a 5x5x5 LED matrix. %Designed and completed circuitry and developed firmware to drive the micro-controller and animate the LEDs.}
+    \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%-----------EXPERIENCE-----------------
+\section{Experience}
+  \resumeSubHeadingListStart
+
+    \resumeSubheading
+      {Northrop Grumman Corp.}{Sterling, VA}
+      {Aerospace Systems Engineer / Ground Software Engineer (remote)}{July 2023 - Present}
+
+      \resumeItemListStart
+        \resumeItem{Google Test}
+	      {Developed unit tests for MAESTRO satellite ground software. Worked in a team to achieve eighty percent code coverage of C source libraries.}
+	      \resumeItem{AGI System's Toolkit}
+	      {Received Master's Certification designing and analyzing satellite orbits, orbit maneuvers, and global coverage reports.}
+    \resumeItemListEnd
+
+    \resumeSubheading
+      {Praxis Inc.}{Naval Research Laboratory, Washington DC}
+      {Software Engineer I (remote)}{August 2018 - July 2023}
+
+      \resumeItemListStart
+        \resumeItem{User Interface}
+          {Lead development efforts to architect and build a user interface for planning robot trajectories using PyQt5. The UI drastically reduced the time required to develop simulated robotic workspaces and plan high assurance operations.}
+        \resumeItem{Computer Networks}
+          {Broadcasted messages on a Linux, multi-node, publisher-subscriber based software bus to configure a robotic state machine using Python and C++ API's.}
+        \resumeItem {Position Controller}
+          {Quality tested a seven degree of freedom robot path planning algorithm's ability to achieve obstacle avoidance in a simulation. Diagnosed and reported issues to robotics software engineers.}
+        \resumeItem{ROS}
+          {Utilized Denavit-Hartenburg parameters to position robot link models in RViz.}
+        \resumeItem{Data Model}
+          {Co-designed a data model in Python for manipulating, storing, combining, and transmitting robotic joint poses, goal positions, Hermite Splines, collision geometries, and other configuration parameters.}
+        \resumeItem{Database}
+         {Queried the command, telemetry, and data handling database using Python (SQL Alchemy) for mechanical parameter data sets required for configuring a robotic simulation.}
+        \resumeItem{Mechanisms}
+          {Manually exported coordinate frame data from robotic payload mechanical drawings into "toml" files, defining mechanism origins to be used for positioning STL models in OpenSceneGraph. Managed and grouped coordinate frame files into collections of fully defined robotic work spaces.}
+        \resumeItem{Neptune}
+          {Implemented robotic force-torque telemetry data structures in a satellite ground system using C++. Implemented a noise filter to emulate imperfect telemetry receipt.}
+       
+        %%%%%%%%%% Software Focused %%%%%%%%%%%
+
+        \resumeItem{Arduino}
+          {Performed, Arduino firmware and hardware integration testing utilizing serial-TTY SSH tunneling.}
+       
+        %\resumeItem{Python} 
+        %  {Inherited software bus API's and message serialization utilities to create a command and telemetry module in python3. The module emulated robot motion commanding and telemetry receipt.}
+        
+        %\resumeItem{MediaWiki} 
+        %  {Created build, deploy, and usage instruction pages in MediaWiki, serving as an accessible location to encourage teammates to maintain project documenation.}
+        
+        %%%%%%%%%%% ROBOTICS %%%%%%%%%%%%%%%%%%%%
+        
+      \resumeItemListEnd
+
+    \resumeSubheading
+      {SAIC}{NASA Goddard Space Flight Center, Greenbelt MD}
+      {Robotic Development Team Intern}{Sept 2017 - August 2018}
+      \resumeItemListStart
+      \resumeItem{Trajectory Explorer}
+          {Aided in robotic path planning by verifying that feature check-out way-points met end of arm collision clearances within the maximum allowable tolerances of the end effector using a dynamic simulation.}
+      \resumeItem{SolidWorks}
+          {Performed feature reduction for a three degree of freedom robotic arm assembly. Mated the simplified robotic assemblies in a testing facility workspace using SolidWorks.}
+      \resumeItem{Mechatronics}
+         {Performed robot servo-motor calibration using proprietary calibration software.}
+      \resumeItem{Mechatronics}
+         {Soldiered power distribution harnesses for "desktop" robotic systems used in outreach demonstrations.}
+        %\resumeItem{Integration}
+        % {Preformed robotic assembly servo-motor calibration and rasberryPi calibration software integration testing.}
+      
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PUBLICATION---------------------
+\section{Publication}
+  % just one for now ;)
+  \publication{Nguyen17}
+
+%-----------AWARDS-----------------
+%  \section{Awards}
+%  \resumeSubheading
+%      {Praxis Inc. Employee Outstanding Achievement Award}{Washington, DC}
+%      {Navy Research Laboratory}{December 2019}
+
+%-------------------------------------------
+
+
+%-----------PROJECTS-----------------
+\section{Projects}
+  \resumeSubHeadingListStart
+  \resumeSubItem{Mechatronics}
+      {Designed a servo motor driven grabber using SolidWorks. Programmed the Arduino firmware to meet functionality requirements for the final project of a master's level robotics course.}
+    \resumeSubItem{Mechatronics}
+      {Designed a hex-configuration unmanned aerial vehicle frame using SolidWorks. Selected and installed electrical components into the 3D-printed frame. Developed an obstacle avoidance algorithm to adjust the copter's flight path in response to raw LIDAR sensor data in real time using ROS in C++.}
+    \resumeSubItem{Energy Storage}
+      {Designed and built a high output power system using $\text{LiFePO}_{\text{4}}$ cells to meet lifestyle sustaining electricity usage requirements. Integrated a charge controlling and cell balancing {\href{https://electrodacus.com/}{embedded system}} into the system for safe, monitor-able power cycling.}
+  \resumeSubHeadingListEnd
+
+\end{document}
+
+%--------PROGRAMMING SKILLS------------
+%\section{Programming Skills}
+%  \resumeSubHeadingListStart
+%    \item{
+%      \textbf{Languages}{: Python, C++, Matlab, LabView}
+%      \hfill
+%      \textbf{Technologies}{: 3D Printing, ROS, }
+%    }
+%  \resumeSubHeadingListEnd
+%
+
